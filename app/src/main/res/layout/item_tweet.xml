@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="15dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginRight="15dp"
+    android:layout_marginBottom="5dp">
+
+    <ImageView
+        android:id="@+id/ivProfileImage"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/tvScreenName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvName"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="1dp"
+        android:layout_toEndOf="@+id/ivProfileImage"
+        android:textColor="#657786"
+        tools:text="@Yeezy" />
+
+    <TextView
+        android:id="@+id/tvBody"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvScreenName"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="2dp"
+        android:layout_toEndOf="@+id/ivProfileImage"
+        android:autoLink="all"
+        android:linksClickable="true"
+        android:textColor="#000000"
+        tools:text="I miss the Old Kanye." />
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_toEndOf="@+id/ivProfileImage"
+        android:text="TextView"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        tools:text="Yeezy" />
+
+    <TextView
+        android:id="@+id/tvCreatedAt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="false"
+        android:layout_marginStart="20dp"
+        android:layout_toEndOf="@+id/tvName"
+        android:text="TextView"
+        android:textColor="#657786"
+        tools:text="15m" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_below="@+id/vectorRetweet"
+        android:layout_marginTop="10dp"
+        android:background="?android:attr/listDivider"
+        android:backgroundTint="#1DA1F2"
+        android:foregroundTint="#1DA1F2" />
+
+    <ImageView
+        android:id="@+id/vectorHeart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ivEmbeded"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@+id/ivProfileImage"
+        app:srcCompat="@drawable/ic_vector_heart_stroke" />
+
+    <ImageView
+        android:id="@+id/vectorRetweet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ivEmbeded"
+        android:layout_alignStart="@+id/tvScreenName"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="5dp"
+        app:srcCompat="@drawable/ic_vector_retweet_stroke" />
+
+    <ImageView
+        android:id="@+id/vectorComment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ivEmbeded"
+        android:layout_alignStart="@+id/tvScreenName"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="5dp"
+        app:srcCompat="@drawable/ic_baseline_add_comment_24" />
+
+    <TextView
+        android:id="@+id/tvRetweets"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ivEmbeded"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@+id/vectorRetweet"
+        android:text="TextView"
+        tools:text="2500" />
+
+    <TextView
+        android:id="@+id/tvFavorites"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ivEmbeded"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@+id/vectorHeart"
+        android:text="TextView"
+        tools:text="6245" />
+
+    <ImageView
+        android:id="@+id/ivEmbeded"
+        android:layout_width="325dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvBody"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="12dp"
+        android:layout_toEndOf="@+id/ivProfileImage"
+        tools:srcCompat="@tools:sample/avatars" />
+
+</RelativeLayout>
